@@ -127,7 +127,6 @@
     </style>
 </head>
 
-<body>
     <?php
     // Initialize variables
     $errorMessage = "";
@@ -174,7 +173,7 @@
     ?>
     <video class="video-background" autoplay loop muted>
         <source src="photos/bmw.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        Your browser does not support video tags.
     </video>
     <div class="left-side">
         <div class="login-box">
@@ -189,7 +188,7 @@
                 <input type="email" id="email" name="email" placeholder="name@example.com" required />
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="••••••••" required />
-                <button type="submit">Login</button>
+                <button type="submit" onclick="isvalid()">Login</button>
             </form>
             <div class="divider">
                 <span><br>Don't have an account? <a href="signup.php"><br>Sign up</a></span>
